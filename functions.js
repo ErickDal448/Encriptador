@@ -161,7 +161,7 @@ function ResponsiveResultado(){
     let altura = height + divHeight;
     myPage.style.height = (altura) + "px";
 
-    console.log("Si respondio");
+    console.log("Si respondio"); //mensaje a consola de verificacion
 }
 
 function NoResposiveResultado(){
