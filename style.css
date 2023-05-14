@@ -271,6 +271,12 @@ main{
         justify-content: center;
         padding: 0 0 0 0;
     }
+    .btn-encriptar{
+        margin-left: 3%;
+    }
+    .btn-desencriptar{
+        margin-right: 3%;
+    }
     .seccion2{
         position: absolute;
         top: 95%;
@@ -299,7 +305,7 @@ main{
         position: absolute;
         top: 15px;
         width: 90%;
-        height: 80%;
+        height: calc(80% - 67px);
         padding: 0;
         box-sizing: border-box;
         margin-left: 5%;
@@ -313,12 +319,17 @@ main{
         top:auto;
         bottom: 15px;
         width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 0;
     }
     .btn-copiar{
         width: 100%;
         height: 67px;
         top:auto;
         right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 }
