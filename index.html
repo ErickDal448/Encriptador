@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" id="pagina">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de textos</title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap');
+          </style>
+
+        <script src="functions.js"></script>
+    </head> 
+
+    <body>
+        <header class="cabeza">
+            <h1><img class=logo src="Imagenes/Vector.png" alt="Logo"></h1> 
+            <section class="seccion-fondo">
+                <div class="custom-shape-divider-top-1682985132">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </section>
+            
+        </header>
+        <main>
+            
+            <section class="seccion1">
+                <div class="contenedor-texto">
+                    <textarea placeholder="Ingrese el texto aqui" class="caja-texto" id="texto" cols="30" rows="10"></textarea>
+                </div>
+                <div class="contenedor-alerta">
+                    <ul class="lista-alerta">
+                        <li><img class="alerta" src="Imagenes/Alerta.png" alt="Alerta"></li>
+                        <li><p>Solo letras minusculas y sin acentos</p></li>
+                    </ul>
+                </div>
+                <div class="contenedor-botones">
+                    <input type="button" class="btn-encriptar" value="Encriptar" onclick="clickEncriptar()">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="clickDesencriptar()">
+                </div>
+            </section>
+            <section class="seccion2" id="seccion2">
+                <div class="contenedor-munieco">
+                    <img src="Imagenes/Muñeco.png" id="imgMunieco" alt="Muneco">
+                </div>
+                <div class="contenedor-parrafo" id="PMunieco">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar" id="btnCopiar" value="Copiar" onclick="Copy()">
+                </div>
+                <div class="contenedor-resultado" id="contenedorResultado">
+                    <p class="texto-resultado" id="respuesta"></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
+
